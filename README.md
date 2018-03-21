@@ -1,0 +1,2 @@
+# kuzzle-payground
+Just testing
