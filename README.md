@@ -1,5 +1,5 @@
 # kuzzle-playground
-Just testing
+Just testing. See [fititnt/chatops-wg-datalake#9](https://github.com/fititnt/chatops-wg-datalake/issues/9) and the working group [fititnt/chatops-wg](https://github.com/fititnt/chatops-wg).
 
 ## Step by step
 
@@ -25,3 +25,11 @@ Based on the documentation at http://docs.kuzzle.io/guide/essentials/installing-
 12 Copy the `_id_` from last respose an use on next request instead of xxxxxxxxxxxxxx
 12. Do a POST request to http://localhost:7512/myindex/mycollection/xxxxxxxxxxxxxx/_update to update a document with body:
     - `{ "message": "in a bottle", "an_englishman": "in New York" }`
+13. Ops. Request headers must set PUT & POST body content as `Content-Type: application/json` (see screenshots for details)
+14. Search documents with POST to http://localhost:7512/myindex/mycollection/_search and params on body (see screenshots for details)
+15. Go to http://kuzzle-backoffice.netlify.com and look around (see screenshots `15..19-kuzzle-backoffice.png`)
+
+
+Stop and clean up
+1. <kbd>Ctrl + C</kbd> at ngrok terminal to stop the proxy connection
+2. `docker-compose down --volumes --rmi all`
